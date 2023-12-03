@@ -11,7 +11,7 @@ export const live = (req, res) => {
 
 export const newOrder = async (req, res) => {
 
-    const { cart } = req.body;
+    const cart = req.body;
     const orderId = await order.create({ cart: cart })
 
     if (orderId) {
