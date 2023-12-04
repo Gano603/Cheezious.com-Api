@@ -23,6 +23,10 @@ const orderModel = Schema({
         type:String,
         default:"Now",
     },
+    address:{
+        type:String,
+        required:true,
+    },
     comments:{
         type:String,
     }
