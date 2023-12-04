@@ -29,7 +29,11 @@ const orderModel = Schema({
     },
     comments:{
         type:String,
-    }
+    },
+    createdAt:{
+        type:Date,
+        default:Date.now,
+    },
 })
 
 export const order = model("Orders",orderModel);
